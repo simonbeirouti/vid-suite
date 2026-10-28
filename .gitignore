@@ -2,6 +2,12 @@ node_modules
 dist
 .DS_Store
 .env
+.secrets.env
 
-# Ignore the output video from Git but not videos you import into src/.
+# Finished videos
 out
+exports
+
+# Each person's projects stay on their own computer. Only the example is shared.
+projects/*
+!projects/example/

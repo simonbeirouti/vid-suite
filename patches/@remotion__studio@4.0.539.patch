@@ -1,0 +1,38 @@
+diff --git a/dist/esm/index-kewagct1.mjs b/dist/esm/index-kewagct1.mjs
+index 259623400961e8a301a854173ce79f1e98b207e4..a63f978e760b0db306a279bbe23ba4006e56608c 100644
+--- a/dist/esm/index-kewagct1.mjs
++++ b/dist/esm/index-kewagct1.mjs
+@@ -1502,7 +1502,7 @@ import { Internals as Internals173 } from "remotion";
+ // src/helpers/studio-fit-padding.ts
+ import { PlayerInternals } from "@remotion/player";
+ import { Internals } from "remotion";
+-var STUDIO_FIT_PADDING = 8;
++var STUDIO_FIT_PADDING = 24;
+ var getPadding = (length) => {
+   return Math.min(STUDIO_FIT_PADDING, Math.max(0, (length - 1) / 2));
+ };
+diff --git a/dist/helpers/studio-fit-padding.d.ts b/dist/helpers/studio-fit-padding.d.ts
+index de2cf1e8bda63ef12d946e584ea44c8f58307c7d..237fb126f664e22723907850b307988cf4ba1844 100644
+--- a/dist/helpers/studio-fit-padding.d.ts
++++ b/dist/helpers/studio-fit-padding.d.ts
+@@ -1,6 +1,6 @@
+ import type { Size } from '@remotion/player';
+ import type { PreviewSize } from 'remotion';
+-export declare const STUDIO_FIT_PADDING = 8;
++export declare const STUDIO_FIT_PADDING = 24;
+ type CanvasSize = {
+     readonly width: number;
+     readonly height: number;
+diff --git a/dist/helpers/studio-fit-padding.js b/dist/helpers/studio-fit-padding.js
+index 3eaabb7e75d1e7fdecd6139795d2b073a63bdd57..ef6769d4971769ca64e74541a7403eba8ae604d5 100644
+--- a/dist/helpers/studio-fit-padding.js
++++ b/dist/helpers/studio-fit-padding.js
+@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
+ exports.calculateStudioCanvasTransformation = exports.calculateStudioScale = exports.getStudioCurrentScaleContext = exports.getStudioPaddedCanvasSize = exports.STUDIO_FIT_PADDING = void 0;
+ const player_1 = require("@remotion/player");
+ const remotion_1 = require("remotion");
+-exports.STUDIO_FIT_PADDING = 8;
++exports.STUDIO_FIT_PADDING = 24;
+ const getPadding = (length) => {
+     return Math.min(exports.STUDIO_FIT_PADDING, Math.max(0, (length - 1) / 2));
+ };

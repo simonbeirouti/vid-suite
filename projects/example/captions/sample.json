@@ -1,0 +1,7 @@
+[
+  { "text": "Every", "startMs": 0, "endMs": 300, "timestampMs": 150, "confidence": null },
+  { "text": " format", "startMs": 300, "endMs": 700, "timestampMs": 500, "confidence": null },
+  { "text": " from", "startMs": 700, "endMs": 950, "timestampMs": 825, "confidence": null },
+  { "text": " one", "startMs": 950, "endMs": 1250, "timestampMs": 1100, "confidence": null },
+  { "text": " video.", "startMs": 1250, "endMs": 1800, "timestampMs": 1525, "confidence": null }
+]

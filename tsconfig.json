@@ -7,10 +7,12 @@
     "strict": true,
     "noEmit": true,
     "lib": ["es2015"],
+    "types": [],
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true
   },
+  "include": ["src", "projects"],
   "exclude": ["remotion.config.ts"]
 }
