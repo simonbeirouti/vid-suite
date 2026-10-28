@@ -4,6 +4,37 @@ This repo is a kit for making social videos with [Remotion](https://www.remotion
 The person you're working with is probably **not a developer**. They describe
 the video and you build it.
 
+## Install and start the kit
+
+When the user asks you to install or set up this kit, or the project commands
+cannot run because dependencies are missing, do the setup yourself. Run commands
+from the main `vid-suite` folder containing `package.json` and `remotion.config.ts`.
+Use this existing project; do not scaffold another Remotion app.
+
+1. **Check the tools.** Run `git --version`, `node --version` and `pnpm --version`.
+   The recommended setup is Node.js 24 and pnpm 12; supported Node.js ranges
+   are in `package.json`. Reuse working installations. If a prerequisite is
+   missing, follow [the install guide](docs/01-install.md) and perform the steps
+   your environment permits. Explain any system installer, sign-in or access
+   step that needs the user. Never ask them to paste credentials into chat.
+2. **Install dependencies.** On a fresh checkout, run
+   `pnpm install --frozen-lockfile`. Repeat when the lockfile changes or installed
+   dependencies are missing. Keep the locked versions, the `patches/` directory
+   and the build settings in `pnpm-workspace.yaml`; the Studio spacing patch is
+   part of the kit. Do not upgrade packages or rewrite the lockfile as a setup
+   shortcut. If installation fails, identify and fix the cause before continuing.
+3. **Check the installation.** Run `pnpm projects` and `pnpm lint`. Report any
+   failure plainly and resolve it. Do not create a sample user project just to
+   check installation; `projects/example/` is already provided.
+4. **Open the preview when checking setup or building a video.** Run `pnpm dev`
+   and keep it running. Reuse an existing Studio for this checkout. Open the
+   exact URL it prints and verify an example composition loads. A project created
+   with `--prepare` gets its own preview after its first format is added.
+5. **Continue with the workflow below.** For a new video, ask for its name if
+   missing, create and open its content folder, gather the media and brief, then
+   build, review and export when requested. If the kit is already working, skip
+   installation and continue the user's project without repeating setup checks.
+
 ## How to talk to the user
 
 - Use plain language. Don't show code, file diffs or terminal output unless they ask.

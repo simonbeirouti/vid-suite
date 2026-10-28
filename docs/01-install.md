@@ -3,6 +3,12 @@
 Set up the kit once, then make videos by talking to Codex or Claude Code.
 You do not need to write video code yourself.
 
+Already have Codex or Claude Code and a local checkout? Open the **vid-suite**
+folder and ask: **"Install and set up this video kit, check that it works, then
+help me make a video."** The agent follows the setup section in
+[AGENTS.md](../AGENTS.md). The steps below are the manual alternative and cover
+installing your AI tool for the first time.
+
 ## What you need
 
 - A computer with space for the kit, your media and finished videos.

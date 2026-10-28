@@ -39,6 +39,24 @@ You won't need to write any code yourself.
 
 Start here for the full conversation: [Make a video with AI](docs/02-make-a-video-with-ai.md).
 
+## Let your agent install and run the kit
+
+If you already have Codex or Claude Code and a local copy of this repository,
+open the main **vid-suite** folder in your AI tool and say:
+
+> Install and set up this video kit, check that it works, then help me make a video.
+
+The agent checks the required tools, installs the project's locked dependencies,
+checks the kit and opens the example in Studio. It then follows the name-first
+video workflow: create and open your content folder, collect the brief, build
+the video, preview it and export when you ask.
+
+[AGENTS.md](AGENTS.md) contains the installation and operating instructions for
+agents. Codex uses it directly; [CLAUDE.md](CLAUDE.md) imports the same instructions
+for Claude Code. This README and the guides explain the process for people.
+Any system installation or account sign-in that needs your input is explained
+when it comes up.
+
 ## What to tell the AI
 
 Give it the topic, audience, platforms, approximate length, tone and any
